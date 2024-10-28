@@ -1,0 +1,20 @@
+.s {
+    strong
+}
+
+.b {
+    color: blue
+}
+
+.r {
+    color: red
+}
+
+.br {
+    color: brown
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: bold; 
+}
