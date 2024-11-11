@@ -9,6 +9,14 @@
             <t><a href="electro.html">Електро</a> </t>
             </ul>
         </nav>
+        <button class="theme-toggle-btn" onclick="toggleTheme()">Змінити тему</button>
+
+            <script>
+                function toggleTheme() {
+                    document.body.classList.toggle('dark-theme');
+                    document.header.classList.toggle('dark-theme');
+                }
+            </script>
     <header>
         <hr size="5" style="background-color: rgb(173, 173, 173);">
 
@@ -16,7 +24,7 @@
             <link rel="stylesheet" href="style.css">
         </head>
         
-        <h1 style="color: blue;">Електрогітари</h1>
+        <h1 style="color: rgba(0, 213, 255, 0.986)">Електрогітари</h1>
         <t>Електрогітара є одним з найпопулярніших музичних інструментів сучасності, особливо в жанрах рок, джаз, блюз, 
             метал та поп. Вона відрізняється від акустичної гітари наявністю електронних компонентів, що дозволяють 
             підсилювати та модулювати звук за допомогою різноманітних ефектів. Нижче наведено основні аспекти, що допоможуть 
@@ -39,7 +47,7 @@
             </ol>
 
             <img src="img_543025bc7db81242872628=660d27c7d3b33 (1).png"  
-            width="630" height="399" /><br/>
+            width="630" height="399" class="r" /><br/>
             
     <style>
         table {width: 100%; border-collapse: collapse;}
@@ -88,6 +96,29 @@
             <td>Лес Пол</td>
         </tr>
     </table>
-    <footer><p>danyagogof™</p><p>1КН-24Б</p></footer>
+    
+    <button class="s" id="scrollToTopBtn" onclick="scrollToTop()">Вгору</button>
+
+    <script>
+        // Функція для плавного прокручування до верху
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Показувати кнопку при прокручуванні вниз
+        window.onscroll = function() {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.style.display = "block"; // Показати кнопку
+            } else {
+                scrollToTopBtn.style.display = "none"; // Приховати кнопку
+            }
+        };
+    </script>
+    
+    <footer><p>danyagogof™</p><p>1КН-24Б</p><footer>
 </body>
 </html>
