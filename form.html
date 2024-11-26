@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування</title>
+</head>
+<body style="text-align: center;">
+<header style="text-align: left;">
+        <nav>
+            <ul class="nav" >
+            <t><a href="index.html">На головну</a></t>
+            <t><a href="acoustic.html">Акустчині<a></t>
+            <t><a href="electro.html">Електро</a> </t>
+            </ul>
+         </nav>
+</header>
+<hr size="5" style="background-color: rgb(173, 173, 173);">
+<h1>Опитування на тему гітар та музики</h1>
+    <form action="save_results.php" method="POST">
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="question1">Яка ваша улюбенна форма гітари?</label><br>
+        <textarea id="question1" name="question1" rows="3" required></textarea><br><br>
+
+        <label for="question2">Який ваш улюбленний гурт?:</label><br>
+        <textarea id="question2" name="question2" rows="3" required></textarea><br><br>
+
+        <label for="question3">Як ви взнали про цей сайт?</label><br>
+        <textarea id="question3" name="question3" rows="3" required></textarea><br><br>
+
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>
